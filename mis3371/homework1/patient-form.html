@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="banner">
+        <img src="logo.jpg" alt="Clinic Logo" width="100">
+        <h1>Prime Care Medical</h1>
+        <p>Today is: 
+            <script>
+                document.write(Date());
+            </script>
+        </p>
+    </div>
+
+    <div id="main-content">
+        <h2>New Patient Registration</h2>
+        
+        <form action="thankyou.html">
+            
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="fname" maxlength="30"></td>
+                    
+                    <td>MI:</td>
+                    <td><input type="text" name="mi" maxlength="1" size="2"></td>
+                    
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lname" maxlength="30"></td>
+                </tr>
+                
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="text" name="dob" placeholder="MM/DD/YYYY"></td>
+                    
+                    <td>Social Security:</td>
+                    <td colspan="3"><input type="password" name="ssn" maxlength="11"></td>
+                </tr>
+
+                <tr>
+                    <td>Address Line 1:</td>
+                    <td colspan="5"><input type="text" name="address1" maxlength="30" size="40"></td>
+                </tr>
+                <tr>
+                    <td>Address Line 2:</td>
+                    <td colspan="5"><input type="text" name="address2" maxlength="30" size="40"></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" maxlength="30"></td>
+                    
+                    <td>State:</td>
+                    <td>
+                        <select name="state">
+                            <option value="TX">Texas</option>
+                            </select>
+                    </td>
+                    
+                    <td>Zip Code:</td>
+                    <td><input type="text" name="zip" minlength="5" maxlength="10"></td>
+                </tr>
+
+                <tr>
+                    <td>Email Address:</td>
+                    <td colspan="2"><input type="email" name="email" placeholder="name@domain.tld"></td>
+                    
+                    <td>Desired User ID:</td>
+                    <td colspan="2"><input type="text" name="userid" maxlength="20"></td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td colspan="2"><input type="password" name="pass1"></td>
+                    
+                    <td>Re-enter Password:</td>
+                    <td colspan="2"><input type="password" name="pass2"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        Gender: 
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                        &nbsp;&nbsp;&nbsp;
+                        Vaccinated? 
+                        <input type="radio" name="vax" value="Y"> Y
+                        <input type="radio" name="vax" value="N"> N
+                        &nbsp;&nbsp;&nbsp;
+                        Have Insurance? 
+                        <input type="radio" name="ins" value="Y"> Y
+                        <input type="radio" name="ins" value="N"> N
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        Check all of the following that apply. Have you had:<br>
+                        <input type="checkbox" name="illness" value="Chicken Pox"> Chicken Pox
+                        <input type="checkbox" name="illness" value="Measles"> Measles
+                        <input type="checkbox" name="illness" value="Covid-19"> Covid-19
+                        <input type="checkbox" name="illness" value="Small Pox"> Small Pox
+                        <input type="checkbox" name="illness" value="Tetanus"> Tetanus
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        On a scale of 1 to 10, 10 being feeling good, how is your health?
+                        <input type="range" name="health_score" min="1" max="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        Describe your current symptoms:<br>
+                        <textarea name="symptoms" rows="3" cols="50"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <input type="reset" value="CLEAR AND START OVER">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Prime Care Medical &nbsp;&nbsp;&nbsp; <button type="button">CONTACT US</button></p>
+        <p>PO BOX 18881<br>Katy, TX 77494</p>
+        <a href="https://facebook.com">Facebook</a> | <a href="https://twitter.com">Twitter</a>
+    </div>
+
+</body>
+</html>
